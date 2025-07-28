@@ -1,0 +1,15 @@
+@import url("fonts.css");
+
+/* 
+Main Green Color: #31D12E
+Background Dark Blue Neutral Color: #252E46
+*/
+
+body {
+  background-color: #252E46;
+}
+
+.headingText {
+  font-family: Roboto;
+  color: #31D12E;
+}
