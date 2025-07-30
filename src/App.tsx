@@ -1,21 +1,15 @@
 import "./styles/App.css";
-import MainTask from "./components/MainTask.tsx";
-
-const mainTaskTest = [
-  {
-    title: "Do Homework",
-    description: "Finish my History homework by 10pm",
-  },
-];
+import MainTaskList from "./components/MainTaskList.tsx";
+import ParsedMainTasks from "./components/ParsedMainTasks.tsx";
+import AddMainTaskBtn from "./components/AddMainTaskBtn.tsx";
 
 function App() {
+  const MainTasks = <ParsedMainTasks />;
   return (
-    <ul className="list-group">
-      <MainTask
-        title={mainTaskTest[0].title}
-        description={mainTaskTest[0].description}
-      ></MainTask>
-    </ul>
+    <>
+      <MainTaskList>{MainTasks}</MainTaskList>
+      <AddMainTaskBtn></AddMainTaskBtn>
+    </>
   );
 }
 
